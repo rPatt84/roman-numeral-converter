@@ -1,0 +1,35 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Roman Numeral Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="welcome-text">Conversion</h1>
+        <div class="conversion-container">
+            <label for="convert-to-from">Please select conversion</label>
+            <br />
+            <select name="conversion" id="convert-to-from">
+                <option value="roman numerals to numbers" selected>Roman Numerals to Numbers</option>
+                <option value="numbers to roman numerals">Numbers to Roman Numerals</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label id="input-label" for="input-box">Enter text</label><br />
+            <input id="input-box" type="text" placeholder="Please enter unit to be converted"><br />
+            <button id="convert-btn" for="input-box" type="submit" onclick="convert()">Convert</button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
